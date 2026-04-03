@@ -14,16 +14,16 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --dark:    #080c14;
-      --dark2:   #0e1520;
-      --dark3:   #141c2b;
+      --dark:    #0a0a07;
+      --dark2:   #111109;
+      --dark3:   #181710;
       --gold:    #C9973A;
       --gold2:   #e8b84b;
-      --blue:    #1a3a6b;
-      --blue2:   #2255a0;
+      --blue:    #1c1b12;
+      --blue2:   #252419;
       --white:   #ffffff;
-      --gray:    #8a9ab0;
-      --border:  #1e2c42;
+      --gray:    #8a8a78;
+      --border:  #2a2920;
       --font-h:  'Oswald', sans-serif;
       --font-b:  'Open Sans', sans-serif;
     }
@@ -54,7 +54,7 @@
     .tb-social a:hover { color: var(--gold); }
 
     /* ── NAV ──────────────────────────────────── */
-    nav { position: sticky; top: 0; z-index: 100; background: var(--dark2); border-bottom: 1px solid var(--border); }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--dark2); border-bottom: 1px solid #2a2920; }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 20px; }
     .nav-logo { font-family: var(--font-h); font-size: 1.35rem; font-weight: 700; letter-spacing: .04em; color: var(--white); }
     .nav-logo .shine { color: var(--gold); }
@@ -64,7 +64,7 @@
     #ham { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
     #ham span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; border-radius: 2px; transition: .3s; }
     #mob-nav { display: none; background: var(--dark2); border-top: 1px solid var(--border); padding: 16px 20px; }
-    #mob-nav a { display: block; padding: 10px 0; font-family: var(--font-h); font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--border); color: rgba(255,255,255,.8); }
+    #mob-nav a { display: block; padding: 10px 0; font-family: var(--font-h); font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid #2a2920; color: rgba(255,255,255,.8); }
     #mob-nav a:last-child { border-bottom: none; }
     .mob-book { background: var(--gold) !important; color: #000 !important; text-align: center; margin-top: 12px; border-radius: 3px; border-bottom: none !important; padding: 10px !important; }
 
@@ -75,7 +75,7 @@
     .hero-slide.active { opacity: 1; }
     .hero-slide img { width: 100%; height: 100%; object-fit: cover; animation: kb 8s ease-out forwards; }
     @keyframes kb { from { transform: scale(1.06); } to { transform: scale(1); } }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(8,12,20,.88) 0%, rgba(8,12,20,.55) 60%, rgba(8,12,20,.35) 100%); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(10,10,7,.92) 0%, rgba(10,10,7,.60) 60%, rgba(10,10,7,.30) 100%); }
     .hero-content { position: relative; z-index: 2; max-width: 640px; }
     .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,151,58,.15); border: 1px solid rgba(201,151,58,.35); border-radius: 30px; padding: 5px 14px; font-size: .78rem; font-family: var(--font-h); letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
     .hero-h1 { font-family: var(--font-h); font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: .02em; text-transform: uppercase; margin-bottom: 18px; }
@@ -113,7 +113,7 @@
     .pkg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
     .pkg-card { background: var(--dark2); border: 1px solid var(--border); border-radius: 6px; padding: 28px 22px; position: relative; transition: all .25s; display: flex; flex-direction: column; }
     .pkg-card:hover { transform: translateY(-6px); border-color: var(--gold); }
-    .pkg-card.featured { border-color: var(--gold); background: linear-gradient(160deg, var(--dark2) 0%, rgba(201,151,58,.08) 100%); }
+    .pkg-card.featured { border-color: var(--gold); background: linear-gradient(160deg, #181710 0%, rgba(201,151,58,.10) 100%); }
     .pkg-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #000; font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 14px; border-radius: 20px; white-space: nowrap; }
     .pkg-icon { font-size: 1.6rem; margin-bottom: 12px; }
     .pkg-name { font-family: var(--font-h); font-size: 1.25rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
@@ -129,7 +129,7 @@
     .pkg-note a { color: var(--gold); }
 
     /* ── CALL BAND ────────────────────────────── */
-    #call-band { background: linear-gradient(135deg, var(--blue) 0%, var(--dark2) 100%); padding: 56px 0; border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
+    #call-band { background: linear-gradient(135deg, #1c1b12 0%, #0a0a07 100%); padding: 56px 0; border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
     .call-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
     .call-text h2 { font-family: var(--font-h); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; text-transform: uppercase; }
     .call-stats { display: flex; gap: 36px; }
@@ -236,7 +236,7 @@
 <body>
 
 <!-- ══ TOP BAR ══════════════════════════════════════════════════════════ -->
-<div id="topbar">
+<div id="topbar" style="background:#1c1b12;">
   <div class="container">
     <div class="tb-inner">
       <div class="tb-left">
@@ -319,7 +319,7 @@
 </section>
 
 <!-- ══ TRUST BAR ═════════════════════════════════════════════════════════ -->
-<section id="trust">
+<section id="trust" style="background:#111109;border-top:1px solid #2a2920;border-bottom:1px solid #2a2920;">
   <div class="container">
     <div class="trust-grid">
       <div class="trust-item">
