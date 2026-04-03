@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Car Detailing in South Florida | Driveway Shine Mobile Detailing</title>
+  <meta name="description" content="Professional mobile car detailing serving Boca Raton, Coral Springs & South FL. We come to you! Express, Premium, Ultimate & Deluxe packages. Call (954) 890-1954.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Driveway Shine Mobile Detailing","telephone":"+19548901954","email":"drivewayhsinedetail@gmail.com","areaServed":["Boca Raton","Coral Springs","South Florida"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"19:00"}],"sameAs":["https://www.instagram.com/jm_exotic_autodetail"]}
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:    #080c14;
+      --dark2:   #0e1520;
+      --dark3:   #141c2b;
+      --gold:    #C9973A;
+      --gold2:   #e8b84b;
+      --blue:    #1a3a6b;
+      --blue2:   #2255a0;
+      --white:   #ffffff;
+      --gray:    #8a9ab0;
+      --border:  #1e2c42;
+      --font-h:  'Oswald', sans-serif;
+      --font-b:  'Open Sans', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--dark); color: var(--white); font-family: var(--font-b); font-size: 15px; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+    .eyebrow { display: inline-block; font-family: var(--font-h); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .accent { color: var(--gold); }
+    section { padding: 72px 0; }
+
+    /* ── BUTTONS ──────────────────────────────── */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; border-radius: 3px; font-family: var(--font-h); font-size: .9rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: all .2s; border: none; }
+    .btn-gold { background: var(--gold); color: #000; }
+    .btn-gold:hover { background: var(--gold2); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+    .btn-outline:hover { background: var(--gold); color: #000; }
+    .btn-sm { padding: 9px 20px; font-size: .82rem; }
+
+    /* ── TOP BAR ──────────────────────────────── */
+    #topbar { background: var(--blue); padding: 8px 0; font-size: .8rem; }
+    .tb-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+    .tb-left { display: flex; align-items: center; gap: 20px; color: rgba(255,255,255,.85); }
+    .tb-left i { color: var(--gold); font-size: .75rem; }
+    .tb-social { display: flex; gap: 14px; }
+    .tb-social a { color: rgba(255,255,255,.7); transition: color .2s; }
+    .tb-social a:hover { color: var(--gold); }
+
+    /* ── NAV ──────────────────────────────────── */
+    nav { position: sticky; top: 0; z-index: 100; background: var(--dark2); border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 20px; }
+    .nav-logo { font-family: var(--font-h); font-size: 1.35rem; font-weight: 700; letter-spacing: .04em; color: var(--white); }
+    .nav-logo .shine { color: var(--gold); }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a { font-family: var(--font-h); font-size: .88rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.8); transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    #ham { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    #ham span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; border-radius: 2px; transition: .3s; }
+    #mob-nav { display: none; background: var(--dark2); border-top: 1px solid var(--border); padding: 16px 20px; }
+    #mob-nav a { display: block; padding: 10px 0; font-family: var(--font-h); font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--border); color: rgba(255,255,255,.8); }
+    #mob-nav a:last-child { border-bottom: none; }
+    .mob-book { background: var(--gold) !important; color: #000 !important; text-align: center; margin-top: 12px; border-radius: 3px; border-bottom: none !important; padding: 10px !important; }
+
+    /* ── HERO ─────────────────────────────────── */
+    #hero { position: relative; height: 100vh; min-height: 560px; max-height: 820px; padding: 0; display: flex; align-items: center; overflow: hidden; }
+    .hero-slides { position: absolute; inset: 0; }
+    .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s; }
+    .hero-slide.active { opacity: 1; }
+    .hero-slide img { width: 100%; height: 100%; object-fit: cover; animation: kb 8s ease-out forwards; }
+    @keyframes kb { from { transform: scale(1.06); } to { transform: scale(1); } }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(8,12,20,.88) 0%, rgba(8,12,20,.55) 60%, rgba(8,12,20,.35) 100%); }
+    .hero-content { position: relative; z-index: 2; max-width: 640px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,151,58,.15); border: 1px solid rgba(201,151,58,.35); border-radius: 30px; padding: 5px 14px; font-size: .78rem; font-family: var(--font-h); letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .hero-h1 { font-family: var(--font-h); font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: .02em; text-transform: uppercase; margin-bottom: 18px; }
+    .hero-desc { font-size: 1rem; color: rgba(255,255,255,.78); margin-bottom: 30px; max-width: 480px; line-height: 1.7; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-area { margin-top: 24px; display: flex; align-items: center; gap: 8px; font-size: .82rem; color: rgba(255,255,255,.6); }
+    .hero-area i { color: var(--gold); }
+
+    /* ── TRUST BAR ────────────────────────────── */
+    #trust { padding: 28px 0; background: var(--blue); }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .trust-item { display: flex; align-items: center; gap: 14px; padding: 16px 24px; border-right: 1px solid rgba(255,255,255,.15); }
+    .trust-item:last-child { border-right: none; }
+    .t-icon { font-size: 1.8rem; color: var(--gold); flex-shrink: 0; }
+    .t-text h4 { font-family: var(--font-h); font-size: .95rem; font-weight: 600; letter-spacing: .03em; }
+    .t-text p { font-size: .78rem; color: rgba(255,255,255,.7); margin-top: 2px; }
+
+    /* ── ABOUT ────────────────────────────────── */
+    #about { background: var(--dark2); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-text h2 { font-family: var(--font-h); font-size: 2.2rem; font-weight: 700; text-transform: uppercase; line-height: 1.15; margin-bottom: 18px; }
+    .about-text p { color: rgba(255,255,255,.78); margin-bottom: 14px; line-height: 1.75; }
+    .about-bullets { list-style: none; margin: 20px 0 28px; display: flex; flex-direction: column; gap: 10px; }
+    .about-bullets li { display: flex; align-items: center; gap: 10px; font-size: .88rem; color: rgba(255,255,255,.85); }
+    .about-bullets li i { color: var(--gold); font-size: .8rem; }
+    .about-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .about-img { border-radius: 4px; overflow: hidden; border: 2px solid var(--border); }
+    .about-img img { height: 420px; }
+
+    /* ── PACKAGES ─────────────────────────────── */
+    #packages { background: var(--dark3); }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header h2 { font-family: var(--font-h); font-size: 2.2rem; font-weight: 700; text-transform: uppercase; line-height: 1.2; }
+    .section-header p { color: var(--gray); margin-top: 12px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .pkg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .pkg-card { background: var(--dark2); border: 1px solid var(--border); border-radius: 6px; padding: 28px 22px; position: relative; transition: all .25s; display: flex; flex-direction: column; }
+    .pkg-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+    .pkg-card.featured { border-color: var(--gold); background: linear-gradient(160deg, var(--dark2) 0%, rgba(201,151,58,.08) 100%); }
+    .pkg-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #000; font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 14px; border-radius: 20px; white-space: nowrap; }
+    .pkg-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .pkg-name { font-family: var(--font-h); font-size: 1.25rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .pkg-price { font-family: var(--font-h); font-size: 2.4rem; font-weight: 700; color: var(--gold); line-height: 1; margin: 10px 0 18px; }
+    .pkg-price span { font-size: 1rem; color: var(--gray); font-weight: 400; }
+    .pkg-divider { border: none; border-top: 1px solid var(--border); margin-bottom: 18px; }
+    .pkg-items { list-style: none; flex: 1; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; }
+    .pkg-items li { display: flex; align-items: flex-start; gap: 9px; font-size: .83rem; color: rgba(255,255,255,.82); line-height: 1.4; }
+    .pkg-items li i { color: var(--gold); font-size: .7rem; margin-top: 4px; flex-shrink: 0; }
+    .pkg-cta { display: block; text-align: center; background: var(--gold); color: #000; font-family: var(--font-h); font-size: .88rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 12px; border-radius: 3px; transition: background .2s; }
+    .pkg-cta:hover { background: var(--gold2); }
+    .pkg-note { text-align: center; margin-top: 30px; font-size: .83rem; color: var(--gray); }
+    .pkg-note a { color: var(--gold); }
+
+    /* ── CALL BAND ────────────────────────────── */
+    #call-band { background: linear-gradient(135deg, var(--blue) 0%, var(--dark2) 100%); padding: 56px 0; border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
+    .call-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .call-text h2 { font-family: var(--font-h); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; text-transform: uppercase; }
+    .call-stats { display: flex; gap: 36px; }
+    .stat { text-align: center; }
+    .stat .num { font-family: var(--font-h); font-size: 2.6rem; font-weight: 700; color: var(--gold); line-height: 1; }
+    .stat .lbl { font-size: .75rem; color: rgba(255,255,255,.65); text-transform: uppercase; letter-spacing: .06em; margin-top: 4px; }
+    .call-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .call-phone { font-family: var(--font-h); font-size: 1.8rem; font-weight: 700; color: var(--white); letter-spacing: .02em; transition: color .2s; }
+    .call-phone:hover { color: var(--gold); }
+
+    /* ── GALLERY ──────────────────────────────── */
+    #gallery { background: var(--dark2); }
+    .gal-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 240px 240px; gap: 10px; }
+    .gal-item { overflow: hidden; border-radius: 4px; }
+    .gal-item img { height: 100%; transition: transform .4s; }
+    .gal-item:hover img { transform: scale(1.04); }
+    .gal-item.tall { grid-row: span 2; }
+    .gal-item.tall img { height: 100%; }
+
+    /* ── WHY ──────────────────────────────────── */
+    #why { background: var(--dark3); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .why-content h2 { font-family: var(--font-h); font-size: 2rem; font-weight: 700; text-transform: uppercase; line-height: 1.2; margin-bottom: 16px; }
+    .why-content > p { color: var(--gray); margin-bottom: 28px; line-height: 1.75; }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+    .why-list li { display: flex; align-items: center; gap: 12px; font-size: .88rem; padding: 12px 16px; border-left: 3px solid var(--gold); background: var(--dark2); border-radius: 0 4px 4px 0; }
+    .why-list li i { color: var(--gold); font-size: .85rem; }
+    .why-images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 10px; }
+    .why-img-main { grid-column: span 2; border-radius: 4px; overflow: hidden; }
+    .why-img-main img { height: 240px; }
+    .why-img-sm { border-radius: 4px; overflow: hidden; }
+    .why-img-sm img { height: 150px; }
+
+    /* ── TESTIMONIALS ─────────────────────────── */
+    #testimonials { background: var(--dark2); }
+    .testi-top { text-align: center; margin-bottom: 40px; }
+    .testi-top h2 { font-family: var(--font-h); font-size: 2rem; font-weight: 700; text-transform: uppercase; }
+    .testi-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start; }
+    .testi-img { border-radius: 6px; overflow: hidden; border: 2px solid var(--border); }
+    .testi-img img { height: 380px; }
+    .testi-slide { display: none; flex-direction: column; gap: 16px; background: var(--dark3); border: 1px solid var(--border); border-radius: 6px; padding: 30px; }
+    .testi-slide.active { display: flex; }
+    .testi-stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; }
+    .testi-text { font-size: .96rem; color: rgba(255,255,255,.88); line-height: 1.75; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 14px; border-top: 1px solid var(--border); padding-top: 16px; }
+    .testi-avatar { width: 44px; height: 44px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-h); font-weight: 700; color: #000; font-size: 1.1rem; flex-shrink: 0; }
+    .testi-name { font-family: var(--font-h); font-weight: 600; font-size: .95rem; }
+    .testi-source { font-size: .75rem; color: var(--gray); margin-top: 2px; }
+
+    /* ── CONTACT ──────────────────────────────── */
+    #contact { background: var(--dark3); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+    .contact-info h2 { font-family: var(--font-h); font-size: 2rem; font-weight: 700; text-transform: uppercase; margin-bottom: 14px; }
+    .contact-info > p { color: var(--gray); margin-bottom: 28px; line-height: 1.75; }
+    .c-details { display: flex; flex-direction: column; gap: 20px; }
+    .c-detail h5 { font-family: var(--font-h); font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .big-phone { font-family: var(--font-h); font-size: 1.7rem; font-weight: 700; color: var(--white); transition: color .2s; }
+    .big-phone:hover { color: var(--gold); }
+    .contact-img { border-radius: 6px; overflow: hidden; border: 2px solid var(--border); }
+    .contact-img img { height: 520px; }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .area-tag { background: var(--dark2); border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-size: .78rem; color: rgba(255,255,255,.75); }
+    .social-row { display: flex; gap: 14px; margin-top: 8px; }
+    .social-row a { width: 38px; height: 38px; background: var(--dark2); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.7); transition: all .2s; font-size: .9rem; }
+    .social-row a:hover { background: var(--gold); color: #000; border-color: var(--gold); }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 48px 0 24px; }
+    .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .foot-logo { font-family: var(--font-h); font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+    .foot-desc { color: var(--gray); font-size: .83rem; line-height: 1.7; margin-bottom: 16px; }
+    .foot-col h5 { font-family: var(--font-h); font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+    .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .foot-col ul li a { color: var(--gray); font-size: .83rem; transition: color .2s; }
+    .foot-col ul li a:hover { color: var(--gold); }
+    .foot-bottom { border-top: 1px solid var(--border); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: .78rem; color: var(--gray); }
+
+    /* ── SCROLL TOP ───────────────────────────── */
+    #top-btn { position: fixed; bottom: 28px; right: 28px; width: 42px; height: 42px; background: var(--gold); color: #000; border: none; border-radius: 50%; font-size: 1rem; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 200; display: flex; align-items: center; justify-content: center; }
+    #top-btn.show { opacity: 1; pointer-events: all; }
+
+    /* ── RESPONSIVE ───────────────────────────── */
+    @media (max-width: 900px) {
+      .pkg-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid, .why-grid, .contact-grid, .testi-grid { grid-template-columns: 1fr; }
+      .gal-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gal-item.tall { grid-row: span 1; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.15); }
+      .trust-item:last-child { border-bottom: none; }
+      .call-inner { flex-direction: column; text-align: center; }
+      .call-cta { align-items: center; }
+      .foot-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .pkg-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      #ham { display: block; }
+      .gal-grid { grid-template-columns: 1fr; }
+      .tb-left { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP BAR ══════════════════════════════════════════════════════════ -->
+<div id="topbar">
+  <div class="container">
+    <div class="tb-inner">
+      <div class="tb-left">
+        <span><i class="fas fa-map-marker-alt"></i> Serving Boca, Coral Springs &amp; South FL</span>
+        <span><i class="fas fa-phone"></i> (954) 890-1954</span>
+        <span><i class="fas fa-mobile-alt"></i> We Come to You!</span>
+      </div>
+      <div class="tb-social">
+        <a href="https://www.instagram.com/drivewayshinecardetail" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/drivewayshinecardetail" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/19548901954" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════════════ -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Driveway <span class="shine">Shine</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:9548901954" class="btn btn-gold btn-sm">📞 Book Now</a>
+      <button id="ham"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div id="mob-nav">
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#packages" onclick="closeMob()">Packages</a>
+    <a href="#gallery" onclick="closeMob()">Gallery</a>
+    <a href="#testimonials" onclick="closeMob()">Reviews</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="tel:9548901954" class="mob-book">📞 (954) 890-1954 — Book Now</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active">
+      <img src="images/gallery-1.jpg" alt="Professional car detailing">
+    </div>
+    <div class="hero-slide">
+      <img src="images/gallery-2.jpg" alt="Mobile detailing South Florida">
+    </div>
+    <div class="hero-slide">
+      <img src="images/gallery-kia.jpg" alt="Freshly detailed vehicle">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-star"></i> Mobile Detailing — We Come to You</div>
+      <h1 class="hero-h1">
+        Showroom Shine.<br>
+        <span class="accent">At Your Driveway.</span>
+      </h1>
+      <p class="hero-desc">
+        Professional mobile car detailing for South Florida. From a quick express wash to a full deluxe detail — we bring the equipment, you stay home.
+      </p>
+      <div class="hero-btns">
+        <a href="tel:9548901954" class="btn btn-gold"><i class="fas fa-phone"></i> Call or Text to Book</a>
+        <a href="#packages" class="btn btn-outline">See Packages</a>
+      </div>
+      <div class="hero-area">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Serving Boca Raton · Coral Springs · South Florida</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ═════════════════════════════════════════════════════════ -->
+<section id="trust">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-car"></i></div>
+        <div class="t-text">
+          <h4>Mobile Service</h4>
+          <p>We come to your home, office, or wherever your car is</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-dollar-sign"></i></div>
+        <div class="t-text">
+          <h4>Packages from $55</h4>
+          <p>Express, Premium, Ultimate &amp; Deluxe — a package for every budget</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-sparkles"></i></div>
+        <div class="t-text">
+          <h4>Spotless Results</h4>
+          <p>Professional-grade products, thorough process, guaranteed shine</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ═════════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">About Driveway Shine</span>
+        <h2>WE BRING THE <span class="accent">SHINE</span> TO YOU</h2>
+        <p>
+          Driveway Shine Mobile Detailing is South Florida's go-to mobile detailing service. We handle everything from a quick exterior wash to a full interior &amp; exterior overhaul — and we do it at your home, office, or wherever is most convenient for you.
+        </p>
+        <p>
+          No hauling your car to a shop. No waiting in line. Just text or call to book, and we'll show up with everything needed to leave your vehicle looking better than it has in years.
+        </p>
+        <ul class="about-bullets">
+          <li><i class="fas fa-check"></i> 100% Mobile — We Come to You</li>
+          <li><i class="fas fa-check"></i> 4 Packages Starting at $55</li>
+          <li><i class="fas fa-check"></i> Interior + Exterior Services</li>
+          <li><i class="fas fa-check"></i> Headlight Restoration Available</li>
+        </ul>
+        <div class="about-btns">
+          <a href="tel:9548901954" class="btn btn-gold"><i class="fas fa-phone"></i> (954) 890-1954</a>
+          <a href="#packages" class="btn btn-outline">View Packages</a>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="images/gallery-kia.jpg" alt="Freshly detailed car by Driveway Shine">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PACKAGES ══════════════════════════════════════════════════════════ -->
+<section id="packages">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Pricing &amp; Packages</span>
+      <h2>PICK YOUR <span class="accent">PACKAGE</span></h2>
+      <p>Every package is performed at your location by a professional detailer with quality products. Call or text to book any package.</p>
+    </div>
+    <div class="pkg-grid">
+
+      <!-- EXPRESS -->
+      <div class="pkg-card">
+        <div class="pkg-icon">🧽</div>
+        <div class="pkg-name">Express</div>
+        <div class="pkg-price">$55 <span>exterior</span></div>
+        <hr class="pkg-divider">
+        <ul class="pkg-items">
+          <li><i class="fas fa-check"></i> Hand Wash with Soft Mitt</li>
+          <li><i class="fas fa-check"></i> Hand Dry</li>
+          <li><i class="fas fa-check"></i> Deep Clean Wheels &amp; Tires</li>
+          <li><i class="fas fa-check"></i> Scrub Inner Barrels</li>
+          <li><i class="fas fa-check"></i> Coat Tires in Glossy Shine</li>
+        </ul>
+        <a href="tel:9548901954" class="pkg-cta">Book Express</a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="pkg-card">
+        <div class="pkg-icon">💎</div>
+        <div class="pkg-name">Premium</div>
+        <div class="pkg-price">$80 <span>in + out</span></div>
+        <hr class="pkg-divider">
+        <ul class="pkg-items">
+          <li><i class="fas fa-check"></i> Includes Full Express Wash</li>
+          <li><i class="fas fa-check"></i> Quick Vacuum</li>
+          <li><i class="fas fa-check"></i> Dashboard Wipe</li>
+          <li><i class="fas fa-check"></i> Console Cleaning</li>
+          <li><i class="fas fa-check"></i> Window Cleaning</li>
+          <li><i class="fas fa-check"></i> Light New Car Scent</li>
+        </ul>
+        <a href="tel:9548901954" class="pkg-cta">Book Premium</a>
+      </div>
+
+      <!-- ULTIMATE -->
+      <div class="pkg-card featured">
+        <div class="pkg-badge">Most Popular</div>
+        <div class="pkg-icon">🔥</div>
+        <div class="pkg-name">Ultimate</div>
+        <div class="pkg-price">$120 <span>full detail</span></div>
+        <hr class="pkg-divider">
+        <ul class="pkg-items">
+          <li><i class="fas fa-check"></i> Includes Express Wash</li>
+          <li><i class="fas fa-check"></i> Deep Vacuum</li>
+          <li><i class="fas fa-check"></i> Seat Crease Detailing</li>
+          <li><i class="fas fa-check"></i> Pet Hair Removal</li>
+          <li><i class="fas fa-check"></i> Full Panel Detail</li>
+          <li><i class="fas fa-check"></i> Door Jambs Wiped</li>
+          <li><i class="fas fa-check"></i> Light New Car Scent</li>
+          <li><i class="fas fa-check"></i> Final Thorough Inspection</li>
+        </ul>
+        <a href="tel:9548901954" class="pkg-cta">Book Ultimate</a>
+      </div>
+
+      <!-- DELUXE -->
+      <div class="pkg-card">
+        <div class="pkg-icon">🏆</div>
+        <div class="pkg-name">Deluxe</div>
+        <div class="pkg-price">$180 <span>premium</span></div>
+        <hr class="pkg-divider">
+        <ul class="pkg-items">
+          <li><i class="fas fa-check"></i> Includes Full Ultimate Detail</li>
+          <li><i class="fas fa-check"></i> High Quality Wax &amp; Polishing</li>
+          <li><i class="fas fa-check"></i> Maximum Paint Protection</li>
+          <li><i class="fas fa-check"></i> Deep Gloss Finish</li>
+        </ul>
+        <a href="tel:9548901954" class="pkg-cta">Book Deluxe</a>
+      </div>
+
+    </div>
+    <p class="pkg-note">Ask about <a href="tel:9548901954">headlight restoration</a> and other add-on services. DM or text <strong>(954) 890-1954</strong> to book.</p>
+  </div>
+</section>
+
+<!-- ══ CALL BAND ═════════════════════════════════════════════════════════ -->
+<section id="call-band">
+  <div class="container">
+    <div class="call-inner">
+      <div class="call-text">
+        <h2>Ready for a <span class="accent">Spotless Ride?</span></h2>
+        <p style="color:rgba(255,255,255,.7);margin-top:8px;font-size:.9rem;">Call or text to book — same-day appointments often available.</p>
+      </div>
+      <div class="call-cta">
+        <a href="tel:9548901954" class="call-phone">(954) 890-1954</a>
+        <a href="tel:9548901954" class="btn btn-gold btn-sm"><i class="fas fa-phone"></i> Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ═══════════════════════════════════════════════════════════ -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Our Work</span>
+      <h2>BEFORE &amp; <span class="accent">AFTER</span></h2>
+      <p>Every vehicle we touch gets the same level of care and attention to detail.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item tall">
+        <img src="images/gallery-3.jpg" alt="Full detail result">
+      </div>
+      <div class="gal-item">
+        <img src="images/gallery-1.jpg" alt="Exterior detail">
+      </div>
+      <div class="gal-item">
+        <img src="images/gallery-kia.jpg" alt="Detailed car">
+      </div>
+      <div class="gal-item">
+        <img src="images/gallery-2.jpg" alt="Interior cleaning">
+      </div>
+      <div class="gal-item">
+        <img src="images/gallery-4.jpg" alt="Wheel cleaning">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY ════════════════════════════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-images">
+        <div class="why-img-main">
+          <img src="images/gallery-2.jpg" alt="Detail work in progress">
+        </div>
+        <div class="why-img-sm">
+          <img src="images/gallery-4.jpg" alt="Clean wheels">
+        </div>
+        <div class="why-img-sm">
+          <img src="images/gallery-1.jpg" alt="Exterior shine">
+        </div>
+      </div>
+      <div class="why-content">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>CONVENIENCE. <span class="accent">QUALITY.</span> RESULTS.</h2>
+        <p>We're a mobile detailing service built around your schedule. No drop-offs, no waiting — just a spotless car delivered to your door at prices that make sense.</p>
+        <ul class="why-list">
+          <li><i class="fas fa-check-circle"></i> We Come to Your Home or Office</li>
+          <li><i class="fas fa-check-circle"></i> Professional Products &amp; Equipment</li>
+          <li><i class="fas fa-check-circle"></i> Exterior + Interior Services</li>
+          <li><i class="fas fa-check-circle"></i> Affordable Packages from $55</li>
+          <li><i class="fas fa-check-circle"></i> Same-Day Booking Available</li>
+          <li><i class="fas fa-check-circle"></i> @DrivewayShineCarDetail on IG</li>
+        </ul>
+        <a href="tel:9548901954" class="btn btn-gold"><i class="fas fa-phone"></i> Call or Text (954) 890-1954</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══════════════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-top">
+      <span class="eyebrow">Reviews</span>
+      <h2>WHAT CLIENTS <span class="accent">SAY</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-img">
+        <img src="images/gallery-3.jpg" alt="Detail result">
+      </div>
+      <div class="testi-right">
+        <div class="testi-slide active">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Booked the Ultimate package and I couldn't believe the results. They came to my house, spent over 2 hours on my car, and it looked brand new when they left. Pet hair completely gone, seats spotless. Worth every penny."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">J</div>
+            <div>
+              <div class="testi-name">Jessica M.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Super easy to book — just texted the number and they were at my place the next morning. Did the Express package on my truck and the wheels and tires alone looked amazing. Will definitely be booking again."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div>
+              <div class="testi-name">Marcus T.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Got the Deluxe package before selling my car and the buyer was shocked at how clean it was. The wax and polish made the paint look better than it had in years. Driveway Shine is the real deal for South Florida."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <div class="testi-name">Amanda R.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:center;padding:12px 0;">
+          <button onclick="goTesti(0)" id="td0" style="width:10px;height:10px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;padding:0;"></button>
+          <button onclick="goTesti(1)" id="td1" style="width:10px;height:10px;border-radius:50%;background:var(--border);border:none;cursor:pointer;padding:0;"></button>
+          <button onclick="goTesti(2)" id="td2" style="width:10px;height:10px;border-radius:50%;background:var(--border);border:none;cursor:pointer;padding:0;"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ═══════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Book a Detail</span>
+        <h2>CALL OR TEXT <span class="accent">TO BOOK</span></h2>
+        <p>No forms, no hassle. Just call or text us and we'll set up a time that works for you. Same-day bookings often available.</p>
+        <div class="c-details">
+          <div class="c-detail">
+            <h5>Call or Text</h5>
+            <a href="tel:9548901954" class="big-phone">(954) 890-1954</a>
+          </div>
+          <div class="c-detail">
+            <h5>Service Area</h5>
+            <div class="area-tags">
+              <span class="area-tag">Boca Raton</span>
+              <span class="area-tag">Coral Springs</span>
+              <span class="area-tag">Pompano Beach</span>
+              <span class="area-tag">Deerfield Beach</span>
+              <span class="area-tag">South Florida</span>
+            </div>
+          </div>
+          <div class="c-detail">
+            <h5>DM Us</h5>
+            <p style="color:rgba(255,255,255,.75);font-size:.88rem;">@DrivewayShineCarDetail</p>
+            <div class="social-row">
+              <a href="https://www.instagram.com/drivewayshinecardetail" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/drivewayshinecardetail" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://wa.me/19548901954" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-img">
+        <img src="images/services-flyer.jpg" alt="Driveway Shine services and pricing">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Driveway <span class="accent">Shine</span></div>
+        <p class="foot-desc">Mobile car detailing for Boca Raton, Coral Springs, and South Florida. We bring the shine to you — call or text (954) 890-1954 to book.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/drivewayshinecardetail" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/drivewayshinecardetail" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/19548901954" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Packages</h5>
+        <ul>
+          <li><a href="#packages">Express — $55</a></li>
+          <li><a href="#packages">Premium — $80</a></li>
+          <li><a href="#packages">Ultimate — $120</a></li>
+          <li><a href="#packages">Deluxe — $180</a></li>
+          <li><a href="tel:9548901954">Headlight Restoration</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:9548901954">(954) 890-1954</a></li>
+          <li><a href="https://wa.me/19548901954">WhatsApp Us</a></li>
+          <li><a href="https://www.instagram.com/drivewayshinecardetail">@DrivewayShineCarDetail</a></li>
+        </ul>
+        <div style="margin-top:14px;font-size:.82rem;color:var(--gray);line-height:2;">
+          Boca · Coral Springs · South FL<br>
+          Call or text to book anytime
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Driveway Shine Mobile Detailing. All rights reserved.</p>
+      <p>South Florida's Mobile Detailing Pros</p>
+    </div>
+  </div>
+</footer>
+
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('top-btn').classList.toggle('show', scrollY > 500);
+  });
+  document.getElementById('ham').addEventListener('click', () => {
+    const m = document.getElementById('mob-nav');
+    m.style.display = m.style.display === 'block' ? 'none' : 'block';
+  });
+  function closeMob() { document.getElementById('mob-nav').style.display = 'none'; }
+
+  // Hero slideshow
+  let slide = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  setInterval(() => {
+    slides[slide].classList.remove('active');
+    slide = (slide + 1) % slides.length;
+    slides[slide].classList.add('active');
+    const img = slides[slide].querySelector('img');
+    img.style.animation = 'none'; img.offsetHeight; img.style.animation = '';
+  }, 5000);
+
+  // Testimonial slider
+  let t = 0;
+  const tes = document.querySelectorAll('.testi-slide');
+  const dots = [document.getElementById('td0'), document.getElementById('td1'), document.getElementById('td2')];
+  function goTesti(n) {
+    tes[t].classList.remove('active'); dots[t].style.background = 'var(--border)';
+    t = n; tes[t].classList.add('active'); dots[t].style.background = 'var(--gold)';
+  }
+  setInterval(() => goTesti((t + 1) % tes.length), 5000);
+</script>
+</body>
+</html>
