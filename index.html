@@ -224,12 +224,15 @@
       .call-cta { align-items: center; }
       .foot-grid { grid-template-columns: 1fr 1fr; }
     }
+    @media (max-width: 768px) {
+      #topbar { display: none; }
+      .nav-links { display: none; }
+      nav .btn { display: none; }
+      #ham { display: block; }
+    }
     @media (max-width: 600px) {
       .pkg-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      #ham { display: block; }
       .gal-grid { grid-template-columns: 1fr; }
-      .tb-left { flex-wrap: wrap; }
     }
   </style>
 </head>
